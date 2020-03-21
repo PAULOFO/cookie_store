@@ -21,7 +21,7 @@ class CookieDetails extends StatelessWidget {
           },
         ),
         title: Text(
-          'Pickup',
+          'Escolher',
           style: TextStyle(
             fontFamily: 'Varela',
             fontSize: 20,
@@ -47,7 +47,7 @@ class CookieDetails extends StatelessWidget {
                 fontFamily: 'Varela',
                 fontSize: 42,
                 fontWeight: FontWeight.bold,
-                color: Color(0xFF17532),
+                color: Color(0xFFF17532),
               ),
             ),
           ),
@@ -67,8 +67,18 @@ class CookieDetails extends StatelessWidget {
                   fontFamily: 'Varela',
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
-                  color: Color(0xFF17532)
+                  color: Color(0xFFF17532)
                 ),
+            ),
+          ),
+          SizedBox(height: 20),
+          Center(
+            child: Text(cookiename,
+              style: TextStyle(
+                  color: Color(0xFF575E67),
+                  fontFamily: 'Varela',
+                  fontSize: 24,
+              ),
             ),
           ),
           SizedBox(height: 20),
@@ -88,7 +98,22 @@ class CookieDetails extends StatelessWidget {
           SizedBox(height: 20),
           Center(
             child: Container(
-
+              width: MediaQuery.of(context).size.width - 50.0,
+              height: 50,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                color: Color(0xFFF17532),
+              ),
+              child: Center(
+                child: Text('Adicionar ao carinho',
+                  style: TextStyle(
+                    fontFamily: 'Varela',
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  )
+                ),
+              ),
             ),
           ),
         ],

@@ -64,7 +64,7 @@ class CookiesPage extends StatelessWidget {
             color: Colors.white,
           ),
           child: Column(
-            children: <Widget>[
+            children: [
               Padding(
                 padding: EdgeInsets.all(5.0),
                 child: Row(
@@ -109,8 +109,8 @@ class CookiesPage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(8),
                 child: Container(
-                  color: Color(0xFFEBBEB),
-                  height: 3.0,
+                  color: Color(0xFFEBEBEB),
+                  height: 1.0,
                 ),
               ),
               Padding(
@@ -140,6 +140,7 @@ class CookiesPage extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: 'Varela',
                         color: Color(0xFFD17E50),
+                        fontWeight: FontWeight.bold,
                         fontSize:12,
                        ),
                       ),
